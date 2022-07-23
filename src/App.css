@@ -48,7 +48,7 @@ body {
     transparent 60%,
     rgba(0, 0, 0, 0.8)
   );
-  height: 101vh;
+  height: 100vh;
   position: relative;
   top: -460px;
 }
@@ -189,14 +189,11 @@ body {
 /* Media Queries */
 
 @media (min-width: 950px) and (max-width: 1024px) {
-  .overlay {
-    top: -415px;
-  }
-  .Hero {
-    height: 100vh;
-  }
   .hero-inner {
     padding-top: 0;
+  }
+  .overlay {
+    margin-top: 50px;
   }
 }
 @media (max-width: 949px) {
@@ -209,9 +206,7 @@ body {
     padding: 0.7rem;
     font-size: 1.275rem;
   }
-  .overlay {
-    top: -523px;
-  }
+
   .section .section-inner {
     flex-direction: column;
   }
@@ -272,13 +267,13 @@ body {
     height: 64px;
     margin: 0;
   }
+  .overlay {
+    margin-top: -62px;
+  }
 }
 @media (max-width: 844px) {
   .Hero {
     height: 100vh;
-  }
-  .overlay {
-    height: 142.4vh;
   }
 }
 @media (max-width: 739px) {
@@ -296,22 +291,19 @@ body {
     height: 42px !important;
   }
   .overlay {
-    top: -464px;
+    margin-top: -3px;
   }
 }
 
 @media (max-width: 473px) {
   .overlay {
-    top: -484px;
+    margin-top: -23px;
   }
 }
 @media (max-width: 341px) {
   .overlay {
-    top: -531px;
+    margin-top: -71px;
   }
 }
 @media (max-width: 320px) {
-  .overlay {
-    top: -560px;
-  }
 }
