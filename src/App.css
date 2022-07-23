@@ -298,3 +298,8 @@ body {
     top: -484px;
   }
 }
+@media (max-width: 341px) {
+  .overlay {
+    top: -531px;
+  }
+}
