@@ -190,10 +190,10 @@ body {
 
 @media (min-width: 950px) and (max-width: 1024px) {
   .overlay {
-    top: -553px;
+    top: -415px;
   }
   .Hero {
-    height: 75vh;
+    height: 100vh;
   }
   .hero-inner {
     padding-top: 0;
@@ -275,7 +275,7 @@ body {
 }
 @media (max-width: 844px) {
   .Hero {
-    height: 142vh;
+    height: 100vh;
   }
   .overlay {
     height: 142.4vh;
