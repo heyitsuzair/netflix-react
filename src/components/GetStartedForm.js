@@ -12,7 +12,7 @@ export default function GetStartedForm() {
       />
       <button type="submit" className="gs-submit">
         Get Started
-        <i class="fa-solid fa-angle-right"></i>
+        <i className="fa-solid fa-angle-right"></i>
       </button>
     </div>
   );
