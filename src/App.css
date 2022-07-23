@@ -109,8 +109,7 @@ body {
   min-width: 440px;
   outline: none;
   border: none;
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 0;
+  border-radius: 0;
 }
 .gs-submit {
   background-color: var(--color-primary);
