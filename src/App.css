@@ -189,9 +189,6 @@ body {
   .hero-inner {
     padding-top: 0;
   }
-  .overlay {
-    margin-top: 50px;
-  }
 }
 @media (max-width: 949px) {
   .get-started {
@@ -264,9 +261,6 @@ body {
     height: 64px;
     margin: 0;
   }
-  .overlay {
-    margin-top: -62px;
-  }
 }
 @media (max-width: 844px) {
   .Hero {
@@ -287,20 +281,4 @@ body {
     min-width: 300px;
     height: 42px !important;
   }
-  .overlay {
-    margin-top: -3px;
-  }
-}
-
-@media (max-width: 473px) {
-  .overlay {
-    margin-top: -23px;
-  }
-}
-@media (max-width: 341px) {
-  .overlay {
-    margin-top: -71px;
-  }
-}
-@media (max-width: 320px) {
 }
