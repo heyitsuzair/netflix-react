@@ -16,7 +16,7 @@ export default function Section1() {
         <div>
           <div className="video-home">
             <img width={450} src={tv} alt="" />
-            <video width="357" autoPlay loop muted>
+            <video width="357" autoPlay playsInline loop muted>
               <source src={video} type="video/mp4" />
             </video>
           </div>
