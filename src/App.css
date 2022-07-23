@@ -273,7 +273,14 @@ body {
     margin: 0;
   }
 }
-
+@media (max-width: 884px) {
+  .Hero {
+    height: 142vh;
+  }
+  .overlay {
+    height: 142.4vh;
+  }
+}
 @media (max-width: 739px) {
   .hero-inner h5 {
     font-weight: 400;
