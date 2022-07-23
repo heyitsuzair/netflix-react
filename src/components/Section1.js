@@ -4,8 +4,8 @@ import video from "../assets/videos/video1.mp4";
 
 export default function Section1() {
   return (
-    <div className="section-1 bb-gray section-card">
-      <div className="section-1-inner">
+    <div className="section bb-gray section-card">
+      <div className="section-inner">
         <div className="section-card-text">
           <h1>Enjoy On Your TV.</h1>
           <h3>
