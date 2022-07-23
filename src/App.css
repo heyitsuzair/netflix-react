@@ -48,7 +48,7 @@ body {
     transparent 60%,
     rgba(0, 0, 0, 0.8)
   );
-  height: 100.4vh;
+  height: 101vh;
   position: relative;
   top: -460px;
 }
@@ -273,7 +273,7 @@ body {
     margin: 0;
   }
 }
-@media (max-width: 884px) {
+@media (max-width: 844px) {
   .Hero {
     height: 142vh;
   }
