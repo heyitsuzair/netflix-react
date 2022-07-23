@@ -303,3 +303,8 @@ body {
     top: -531px;
   }
 }
+@media (max-width: 320px) {
+  .overlay {
+    top: -560px;
+  }
+}
