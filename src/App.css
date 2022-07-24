@@ -200,6 +200,9 @@ body {
   display: block;
   width: 68vw;
 }
+.section-5 .section-inner h5 {
+  text-align: center;
+}
 .section-5 .section-inner h1 {
   font-size: 3rem;
   text-align: center;
@@ -225,8 +228,8 @@ body {
   padding: 2rem 1.8rem;
   margin-bottom: 0.5rem;
   margin-top: 1px;
+  line-height: 1.8;
 }
-
 .section-5 .section-inner .accordin .accordin-text.closed {
   display: none;
 }
