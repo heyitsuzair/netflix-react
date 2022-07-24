@@ -265,24 +265,24 @@ body {
   margin-top: 0.5rem;
 }
 /* Only On Component */
-.navbar {
+.navbar-2 {
   display: flex;
   background-color: black;
   padding: 0.2rem 1rem;
   justify-content: space-between;
   align-items: center;
 }
-.navbar .nav-logo {
+.navbar-2 .nav-logo {
   margin-left: 1.2rem;
   margin-top: 0.3rem;
 }
-.navbar .nav-right {
+.navbar-2 .nav-right {
   display: flex;
   color: white;
   align-items: center;
   justify-content: center;
 }
-.navbar .nav-right p {
+.navbar-2 .nav-right p {
   margin: 0;
   font-size: 0.9rem;
 }
@@ -396,7 +396,7 @@ body {
   .footer .section-inner {
     flex-direction: row;
   }
-  .navbar .nav-right p {
+  .navbar-2 .nav-right p {
     display: none;
   }
 }
