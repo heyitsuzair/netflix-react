@@ -8,6 +8,8 @@ import Section5 from "./components/Section5";
 // import LoadingBar from "react-top-loading-bar";
 // import { useState } from "react";
 import Section6 from "./components/Section6";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import OnlyOn from "./components/OnlyOn";
 
 function App() {
   // const [progress, setProgress] = useState(0);
@@ -18,13 +20,25 @@ function App() {
   return (
     <div className="App">
       {/* <LoadingBar olor="#f11946" progress={progress} height={3} /> */}
-      <Hero />
-      <Section1 />
-      <Section2 />
-      <Section3 />
-      <Section4 />
-      <Section5 />
-      <Section6 />
+      <Router>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Hero />
+                <Section1 />
+                <Section2 />
+                <Section3 />
+                <Section4 />
+                <Section5 />
+                <Section6 />
+              </>
+            }
+          />
+          <Route path="/onlyon" element={<OnlyOn />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

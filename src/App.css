@@ -264,6 +264,48 @@ body {
 .footer-speed {
   margin-top: 0.5rem;
 }
+/* Only On Component */
+.navbar {
+  display: flex;
+  background-color: black;
+  padding: 0.2rem 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .nav-logo {
+  margin-left: 1.2rem;
+  margin-top: 0.3rem;
+}
+.navbar .nav-right {
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+.navbar .nav-right p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+#join-now {
+  background-color: var(--color-primary);
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 4px 10px;
+  text-decoration: none;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  color: white;
+}
+#sign-in-only {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 4px 10px;
+  text-decoration: none;
+  border: 2px solid rgb(104, 104, 104);
+  border-radius: 6px;
+  color: white;
+}
+
 /* Media Queries */
 
 @media (min-width: 950px) and (max-width: 1024px) {

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Section6() {
   return (
@@ -6,61 +7,61 @@ export default function Section6() {
       <div className="section-inner footer-inner">
         <div className="footer-sec-1">
           <div className="footer-contact">
-            <a href="./contact">Questions? Contact Us</a>
+            <Link to="/">Questions? Contact Us</Link>
           </div>
           <div className="footer-faq">
-            <a href="./faq">FAQ</a>
+            <Link to="/">FAQ</Link>
           </div>
           <div className="footer-investor">
-            <a href="./contact">Investor Relations</a>
+            <Link to="/">Investor Relations</Link>
           </div>
           <div className="footer-privacy">
-            <a href="./contact">Privacy</a>
+            <Link to="/">Privacy</Link>
           </div>
           <div className="footer-speed">
-            <a href="./contact">Speed Test</a>
+            <Link to="/">Speed Test</Link>
           </div>
           <div className="footer-location">
-            <a href="./contact">Netflix Pakistan</a>
+            <Link to="/">Netflix Pakistan</Link>
           </div>
         </div>
         <div className="footer-sec-1">
           <div className="footer-faq">
-            <a href="./faq">Help Center</a>
+            <Link to="/">Help Center</Link>
           </div>
           <div className="footer-investor">
-            <a href="./contact">Jobs</a>
+            <Link to="/">Jobs</Link>
           </div>
           <div className="footer-privacy">
-            <a href="./contact">Cookie Preference</a>
+            <Link to="/">Cookie Preference</Link>
           </div>
           <div className="footer-speed">
-            <a href="./contact">Legal Notices</a>
+            <Link to="/">Legal Notices</Link>
           </div>
         </div>
         <div className="footer-sec-1  footer-seclast-sec">
           <div className="footer-faq">
-            <a href="./faq">Account</a>
+            <Link to="/">Account</Link>
           </div>
           <div className="footer-privacy">
-            <a href="./contact">Privacy</a>
+            <Link to="/">Privacy</Link>
           </div>
           <div className="footer-speed">
-            <a href="./contact">Corporate Information</a>
+            <Link to="/">Corporate Information</Link>
           </div>
           <div className="footer-investor">
-            <a href="./contact">Only On Netflix</a>
+            <Link to="/onlyon">Only On Netflix</Link>
           </div>
         </div>
         <div className="footer-sec-1 footer-last-sec">
           <div className="footer-faq">
-            <a href="./faq">Media Center</a>
+            <Link to="/">Media Center</Link>
           </div>
           <div className="footer-investor">
-            <a href="./contact">Terms Of Use</a>
+            <Link to="/">Terms Of Use</Link>
           </div>
           <div className="footer-privacy">
-            <a href="./contact">Contact Us</a>
+            <Link to="/">Contact Us</Link>
           </div>
         </div>
       </div>
