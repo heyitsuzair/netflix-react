@@ -2,10 +2,11 @@ import React from "react";
 
 import logo from "../assets/img/logo-2.png";
 import logo2 from "../assets/img/favicon.ico";
+import OnlyOn_1 from "./OnlyOn_1";
 
 export default function OnlyOn() {
   return (
-    <div>
+    <div className="onlyOn">
       <navbar className="navbar-2">
         <div className="nav-logo">
           <img src={logo} alt="Netflix" id="logo1" width={100} />
@@ -21,6 +22,9 @@ export default function OnlyOn() {
           </a>
         </div>
       </navbar>
+      <div className="onlyon-content">
+        <OnlyOn_1 />
+      </div>
     </div>
   );
 }
