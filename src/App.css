@@ -286,6 +286,9 @@ body {
   margin: 0;
   font-size: 0.9rem;
 }
+#logo2 {
+  display: none;
+}
 #join-now {
   background-color: var(--color-primary);
   font-size: 1rem;
@@ -393,6 +396,9 @@ body {
   .footer .section-inner {
     flex-direction: row;
   }
+  .navbar .nav-right p {
+    display: none;
+  }
 }
 @media (max-width: 844px) {
   .Hero {
@@ -436,5 +442,11 @@ body {
 @media (max-width: 600px) {
   .section-6 .footer-seclast-sec {
     display: none;
+  }
+  #logo1 {
+    display: none;
+  }
+  #logo2 {
+    display: block;
   }
 }
