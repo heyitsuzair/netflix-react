@@ -236,6 +236,34 @@ body {
 .section-5 .section-inner .accordin .accordin-text.open {
   display: block;
 }
+/* Section 6 */
+.section-6 {
+  padding: 3rem;
+  color: #737373;
+  font-size: 0.7rem;
+}
+.section-6 .section-inner {
+  justify-content: center;
+}
+.section-6 .section-inner a {
+  color: #737373;
+  text-decoration: none;
+}
+.section-6 .footer-contact {
+  margin-bottom: 1.5rem;
+}
+.section-6 .footer-location {
+  margin-top: 1.5rem;
+}
+.section-6 .footer-sec-1 {
+  margin-right: 3rem;
+}
+.section-6 .footer-faq,
+.footer-investor,
+.footer-privacy,
+.footer-speed {
+  margin-top: 0.5rem;
+}
 /* Media Queries */
 
 @media (min-width: 950px) and (max-width: 1024px) {
@@ -320,6 +348,9 @@ body {
   .section-4 .section-inner .section-card-text {
     order: 1;
   }
+  .footer .section-inner {
+    flex-direction: row;
+  }
 }
 @media (max-width: 844px) {
   .Hero {
@@ -327,6 +358,12 @@ body {
   }
   .section-5 .section-inner h1 {
     font-size: 2rem;
+  }
+  .section-6 .footer-last-sec {
+    display: none;
+  }
+  .section-6 .footer-sec-1 {
+    margin-right: 2rem;
   }
 }
 @media (max-width: 739px) {
@@ -352,5 +389,10 @@ body {
   .section-5 .section-inner .accordin .accordin-text .accodin-paragraph {
     padding: 2rem 1rem;
     font-size: 0.9rem;
+  }
+}
+@media (max-width: 600px) {
+  .section-6 .footer-seclast-sec {
+    display: none;
   }
 }
