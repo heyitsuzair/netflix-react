@@ -9,6 +9,7 @@ body {
   --border-gray: #222;
   --color-black: black;
   --color-blue: #0071eb;
+  --bg-gray: #303030;
 }
 /* Scrollbar */
 ::-webkit-scrollbar {
@@ -183,6 +184,55 @@ body {
 .section-2 .section-inner .left-bottom-mobile {
   display: none;
 }
+/* Section 3 */
+.section-3 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/* Section 5 */
+.section-5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-5 .section-inner {
+  display: block;
+  width: 68vw;
+}
+.section-5 .section-inner h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+.section-5 .section-inner .accordin .accordin-item {
+  border: 0;
+  font-weight: 400;
+  padding: 0.8em 1.2em 0.8em 1.2em;
+  position: relative;
+  width: 68vw;
+  background: var(--bg-gray);
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  text-align: left;
+}
+.section-5 .section-inner .accordin .accordin-text .accodin-paragraph {
+  background: var(--bg-gray);
+  margin: 0;
+  padding: 2rem 1.8rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1px;
+}
+
+.section-5 .section-inner .accordin .accordin-text.closed {
+  display: none;
+}
+.section-5 .section-inner .accordin .accordin-text.open {
+  display: block;
+}
 /* Media Queries */
 
 @media (min-width: 950px) and (max-width: 1024px) {
@@ -261,10 +311,19 @@ body {
     height: 64px;
     margin: 0;
   }
+  .section-4 .section-inner .video {
+    order: 2;
+  }
+  .section-4 .section-inner .section-card-text {
+    order: 1;
+  }
 }
 @media (max-width: 844px) {
   .Hero {
     height: 100vh;
+  }
+  .section-5 .section-inner h1 {
+    font-size: 2rem;
   }
 }
 @media (max-width: 739px) {
@@ -280,5 +339,15 @@ body {
   .gs-email {
     min-width: 300px;
     height: 42px !important;
+  }
+  .section-5 .section-inner h1 {
+    font-size: 1.5rem;
+  }
+  .section-5 .section-inner .accordin .accordin-item {
+    font-size: 1rem;
+  }
+  .section-5 .section-inner .accordin .accordin-text .accodin-paragraph {
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
   }
 }
