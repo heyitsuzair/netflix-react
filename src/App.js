@@ -10,6 +10,7 @@ import { useState } from "react";
 import Section6 from "./components/Section6";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import OnlyOn from "./components/OnlyOn";
+import Movie from "./components/Movie";
 
 function App() {
   const [progress, setProgress] = useState(0);
@@ -39,6 +40,10 @@ function App() {
           <Route
             path="/onlyon"
             element={<OnlyOn setProgress={setProgressTo} />}
+          />
+          <Route
+            path="/movie/:id"
+            element={<Movie setProgress={setProgressTo} />}
           />
         </Routes>
       </Router>

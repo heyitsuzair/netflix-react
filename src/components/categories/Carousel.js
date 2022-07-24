@@ -3,6 +3,7 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 export default function Carousel({ title, cat_id, setProgress }) {
   const [movies, setMovies] = useState([]);
@@ -23,7 +24,7 @@ export default function Carousel({ title, cat_id, setProgress }) {
     //eslint-disable-next-line
   }, []);
   const options = {
-    margin: 9,
+    margin: 7,
     responsiveClass: true,
     nav: true,
     autoplay: false,
@@ -58,10 +59,13 @@ export default function Carousel({ title, cat_id, setProgress }) {
           {movies.map((movie) => {
             return (
               <div className="item" key={`${movie.id}`}>
-                <img
-                  alt="img"
-                  src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`}
-                />
+                <Link to={`/movie/${movie.id}`} id={`${movie.id}`}>
+                  <img
+                    alt="img"
+                    src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`}
+                  />
+                </Link>
+                <h6>{movie.original_title}</h6>
               </div>
             );
           })}
