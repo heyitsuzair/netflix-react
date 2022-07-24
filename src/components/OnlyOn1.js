@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function OnlyOn_1() {
+export default function OnlyOn1() {
   return (
     <div className="onlyon-sec">
       <div className="onlyon-sec-inner">

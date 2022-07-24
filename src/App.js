@@ -5,21 +5,21 @@ import Section2 from "./components/Section2";
 import Section3 from "./components/Section3";
 import Section4 from "./components/Section4";
 import Section5 from "./components/Section5";
-// import LoadingBar from "react-top-loading-bar";
-// import { useState } from "react";
+import LoadingBar from "react-top-loading-bar";
+import { useState } from "react";
 import Section6 from "./components/Section6";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import OnlyOn from "./components/OnlyOn";
 
 function App() {
-  // const [progress, setProgress] = useState(0);
-  // const setProgressTo = (setProgressTo) => {
-  //   setProgress(setProgressTo);
-  // };
+  const [progress, setProgress] = useState(0);
+  const setProgressTo = (setProgressTo) => {
+    setProgress(setProgressTo);
+  };
 
   return (
     <div className="App">
-      {/* <LoadingBar olor="#f11946" progress={progress} height={3} /> */}
+      <LoadingBar olor="#f11946" progress={progress} height={3} />
       <Router>
         <Routes>
           <Route
@@ -36,7 +36,10 @@ function App() {
               </>
             }
           />
-          <Route path="/onlyon" element={<OnlyOn />} />
+          <Route
+            path="/onlyon"
+            element={<OnlyOn setProgress={setProgressTo} />}
+          />
         </Routes>
       </Router>
     </div>

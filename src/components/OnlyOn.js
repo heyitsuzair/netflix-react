@@ -2,9 +2,10 @@ import React from "react";
 
 import logo from "../assets/img/logo-2.png";
 import logo2 from "../assets/img/favicon.ico";
-import OnlyOn_1 from "./OnlyOn_1";
+import OnlyOn1 from "./OnlyOn1";
+import OnlyOnSlider from "./OnlyOnSlider";
 
-export default function OnlyOn() {
+export default function OnlyOn({ setProgress }) {
   return (
     <div className="onlyOn">
       <navbar className="navbar-2">
@@ -23,7 +24,8 @@ export default function OnlyOn() {
         </div>
       </navbar>
       <div className="onlyon-content">
-        <OnlyOn_1 />
+        <OnlyOn1 />
+        <OnlyOnSlider setProgress={setProgress} />
       </div>
     </div>
   );
