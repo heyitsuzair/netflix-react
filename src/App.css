@@ -332,15 +332,18 @@ body {
   color: var(--color-primary) !important;
   font-size: 3rem !important;
   font-weight: 400 !important;
+  color: white !important;
+  background: var(--color-primary) !important;
 }
 .owl-prev {
-  color: var(--color-primary) !important;
+  color: white !important;
   font-size: 3rem !important;
   font-weight: 400 !important;
+  background: var(--color-primary) !important;
 }
 .owl-nav {
   position: relative;
-  top: -7rem;
+  top: -19rem;
   display: flex;
   justify-content: space-between;
 }
@@ -489,7 +492,7 @@ body {
     font-size: 1rem;
   }
   .owl-nav {
-    top: -6.8rem;
+    top: -20.8rem;
   }
 }
 @media (max-width: 844px) {
@@ -504,6 +507,9 @@ body {
   }
   .section-6 .footer-sec-1 {
     margin-right: 2rem;
+  }
+  .owl-nav {
+    top: -17.8rem;
   }
 }
 @media (max-width: 739px) {
@@ -531,7 +537,7 @@ body {
     font-size: 0.9rem;
   }
   .owl-nav {
-    top: -7.8rem;
+    top: -17.8rem;
   }
   .movie .movie-inner .movie-hero .movie-hero-inner {
     width: 85vw;
@@ -546,6 +552,9 @@ body {
   }
   #logo2 {
     display: block;
+  }
+  .owl-nav {
+    top: -18.8rem;
   }
   .onlyon-content {
     padding: 15px 25px;

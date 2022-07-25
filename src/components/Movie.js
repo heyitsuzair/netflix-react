@@ -15,7 +15,6 @@ export default function Movie({ setProgress }) {
       setProgress(90);
       setMovie(res.data);
       setProgress(100);
-      console.log(res);
     });
   };
 
