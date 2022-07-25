@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../assets/img/logo-2.png";
 import GetStartedForm from "./GetStartedForm";
+import { Link } from "react-router-dom";
 export default function Hero() {
   return (
     <>
@@ -9,9 +10,9 @@ export default function Hero() {
           <div className="navbar">
             <div className="nav-item">
               <img src={logo} alt="Netflix" width={120} />
-              <a id="signin" className="authLinks" href="/">
-                Sign In
-              </a>
+              <Link id="signin" className="authLinks" to="/onlyon">
+                See Movies
+              </Link>
             </div>
           </div>
           <div className="hero-inner">
