@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import { useParams } from "react-router-dom";
 import logo from "../assets/img/logo-2.png";
 import logo2 from "../assets/img/favicon.ico";
