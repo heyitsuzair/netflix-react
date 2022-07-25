@@ -74,6 +74,7 @@ export default function Movie({ setProgress }) {
     //eslint-disable-next-line
   }, [id]);
   setProgress(100);
+  document.title = `Netflix | ${movie.original_title}`;
 
   return (
     <div>
