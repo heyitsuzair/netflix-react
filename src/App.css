@@ -435,6 +435,15 @@ body {
   color: var(--gray);
   text-align: center;
 }
+.movie-videos .movie-videos-inner .video-heading span {
+  color: var(--gray);
+}
+.movie-videos .movie-videos-inner .iframe-videos {
+  border: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 /* Media Queries */
 
 @media (min-width: 950px) and (max-width: 1024px) {
@@ -581,6 +590,12 @@ body {
   }
   .movie .movie-inner .after-hero {
     width: 93vw;
+  }
+  .movie .movie-inner .movie-videos .movie-videos-inner .owl-nav {
+    top: -7.8rem;
+  }
+  .movie .movie-inner .movie-videos .movie-videos-inner .owl-item .item {
+    align-items: center;
   }
 }
 @media (max-width: 600px) {

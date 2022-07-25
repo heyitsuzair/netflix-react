@@ -4,23 +4,60 @@ import logo from "../assets/img/logo-2.png";
 import logo2 from "../assets/img/favicon.ico";
 import axios from "axios";
 import { useState, useEffect } from "react";
+import OwlCarousel from "react-owl-carousel";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
+
 export default function Movie({ setProgress }) {
   const [movie, setMovie] = useState([]);
+  const [videos, setVideos] = useState([]);
   let { id } = useParams();
-  setProgress(20);
+  const options = {
+    margin: 5,
+    responsiveClass: true,
+    nav: true,
+    autoplay: false,
+    navText: ["<", ">"],
+    smartSpeed: 1000,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      400: {
+        items: 1,
+      },
+      600: {
+        items: 2,
+      },
+      700: {
+        items: 3,
+      },
+      1000: {
+        items: 4,
+      },
+    },
+  };
+  setProgress(30);
   const movieDetail = async (idIncome) => {
     let url = `https://api.themoviedb.org/3/movie/${idIncome}?api_key=d33fd7ceb022bfce03f26f165fccb251&language=en-US `;
-    setProgress(70);
+    setProgress(60);
     await axios.get(url).then((res) => {
       setProgress(90);
       setMovie(res.data);
-      console.log(res.data);
+    });
+  };
+  const getVideos = async (idIncome) => {
+    let url = `https://api.themoviedb.org/3/movie/${idIncome}/videos?api_key=d33fd7ceb022bfce03f26f165fccb251&language=en-US `;
+
+    await axios.get(url).then((res) => {
+      setVideos(res.data.results);
       setProgress(100);
     });
   };
 
   useEffect(() => {
     movieDetail(id);
+    getVideos(id);
     //eslint-disable-next-line
   }, []);
 
@@ -111,6 +148,34 @@ export default function Movie({ setProgress }) {
                 <span className="tagline-inner">{movie.tagline}</span>
               </div>
               <hr className="hr-movie" />
+              <div className="movie-videos">
+                <div className="movie-videos-inner">
+                  <div className="video-heading">
+                    Videos | <span>{movie.title}</span>
+                  </div>
+                  <div className="videos-movie">
+                    <OwlCarousel
+                      className="slider-items owl-carousel"
+                      {...options}
+                    >
+                      {videos.map((video) => {
+                        return (
+                          <div className="item" key={`${movie.id}`}>
+                            <iframe
+                              key={video.key}
+                              title={video.name}
+                              width="250"
+                              height="140"
+                              src={`https://www.youtube.com/embed/${video.key}`}
+                              className="iframe-videos"
+                            ></iframe>
+                          </div>
+                        );
+                      })}
+                    </OwlCarousel>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
