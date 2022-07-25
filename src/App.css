@@ -427,6 +427,9 @@ body {
 }
 .movie .movie-inner .after-hero .tagline {
   margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 .movie .movie-inner .after-hero .tagline .tagline-inner {
   color: var(--gray);
@@ -576,6 +579,9 @@ body {
   .movie .movie-inner .movie-hero .movie-hero-inner {
     width: 85vw;
   }
+  .movie .movie-inner .after-hero {
+    width: 93vw;
+  }
 }
 @media (max-width: 600px) {
   .section-6 .footer-seclast-sec {
@@ -597,5 +603,8 @@ body {
 @media (max-width: 400px) {
   .owl-nav {
     top: -22.8rem;
+  }
+  .movie .movie-inner .after-hero {
+    width: 95vw;
   }
 }
