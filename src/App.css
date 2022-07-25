@@ -443,8 +443,40 @@ body {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-
+.movie .movie-inner .after-hero .more-detail-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.movie .movie-inner .after-hero .more-details-h2 {
+  font-weight: 400;
+}
+.movie-inner .after-hero .more-detail-section .more-details .more-details-item {
+  color: var(--gray);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+.movie-inner .after-hero .more-detail-section .more-details .detail-item {
+  color: white;
+}
+.more-like-this {
+  display: grid;
+  grid-template-columns: repeat(8, 11vw);
+}
+.more-like-this .more-like-this-inner {
+  margin-top: 2rem;
+  text-align: center;
+}
+.more-like-this .more-like-this-inner img {
+  width: 15vh;
+}
 /* Media Queries */
+@media (max-width: 1024px) {
+  .more-like-this {
+    grid-template-columns: repeat(5, 19vw);
+  }
+}
 
 @media (min-width: 950px) and (max-width: 1024px) {
   .hero-inner {
@@ -540,6 +572,9 @@ body {
   .owl-nav {
     top: -20.8rem;
   }
+  .more-like-this {
+    grid-template-columns: repeat(4, 23vw);
+  }
 }
 @media (max-width: 844px) {
   .Hero {
@@ -597,6 +632,9 @@ body {
   .movie .movie-inner .movie-videos .movie-videos-inner .owl-item .item {
     align-items: center;
   }
+  .more-like-this {
+    grid-template-columns: repeat(3, 31vw);
+  }
 }
 @media (max-width: 600px) {
   .section-6 .footer-seclast-sec {
@@ -614,6 +652,22 @@ body {
   .onlyon-content {
     padding: 15px 25px;
   }
+  .movie .after-hero .movie-videos .movie-videos-inner .video-heading {
+    text-align: center;
+  }
+  .more-like-this {
+    grid-template-columns: repeat(2, 47vw);
+  }
+}
+@media (max-width: 500px) {
+  .movie .movie-inner .after-hero .more-detail-section {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .movie .movie-inner .after-hero .more-details-h2 {
+    text-align: center;
+  }
 }
 @media (max-width: 400px) {
   .owl-nav {
@@ -621,5 +675,8 @@ body {
   }
   .movie .movie-inner .after-hero {
     width: 95vw;
+  }
+  .more-like-this {
+    grid-template-columns: repeat(2, 48vw);
   }
 }

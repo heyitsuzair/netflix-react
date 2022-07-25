@@ -42,7 +42,7 @@ function App() {
             element={<OnlyOn setProgress={setProgressTo} />}
           />
           <Route
-            path="/movie/:id"
+            path="/movie/:catid/:id"
             element={<Movie setProgress={setProgressTo} />}
           />
         </Routes>

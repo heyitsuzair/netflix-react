@@ -59,7 +59,7 @@ export default function Carousel({ title, cat_id, setProgress }) {
           {movies.map((movie) => {
             return (
               <div className="item" key={`${movie.id}`}>
-                <Link to={`/movie/${movie.id}`} id={`${movie.id}`}>
+                <Link to={`/movie/${cat_id}/${movie.id}`} id={`${movie.id}`}>
                   <img
                     alt="img"
                     src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`}
