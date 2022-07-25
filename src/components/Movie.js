@@ -46,7 +46,6 @@ export default function Movie({ setProgress }) {
     let url = `https://api.themoviedb.org/3/movie/upcoming?api_key=d33fd7ceb022bfce03f26f165fccb251&language=en-US&page=1`;
     axios.get(url).then((res) => {
       setComing(res.data.results);
-      console.log(res.data.results);
       setProgress(100);
     });
   };
@@ -91,7 +90,7 @@ export default function Movie({ setProgress }) {
               <MovieVideos videos={videos} movie={movie} />
               <MoreDetails movie={movie} />
               <MoreLikeThis simliar={similar} catid={catid} />
-              <Upcoming />
+              <Upcoming coming={coming} />
             </div>
           </div>
         </div>
