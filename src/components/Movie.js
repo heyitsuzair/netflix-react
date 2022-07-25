@@ -14,6 +14,7 @@ export default function Movie({ setProgress }) {
     await axios.get(url).then((res) => {
       setProgress(90);
       setMovie(res.data);
+      console.log(res.data);
       setProgress(100);
     });
   };
@@ -89,6 +90,27 @@ export default function Movie({ setProgress }) {
                   </span>
                 </div>
               </div>
+            </div>
+          </div>
+          <div className="after-hero">
+            <div className="after-hero-inner">
+              <div className="all-you-want">
+                <div className="want-text">
+                  <img src={logo2} alt="Netflix" width={30} />
+                  <span>Watch all you want.</span>
+                </div>
+                <div className="want-btn">
+                  <a href="/" id="join-now">
+                    Join Now
+                  </a>
+                </div>
+              </div>
+              <hr className="hr-movie" />
+              <div className="tagline">
+                <span>{movie.status}</span>
+                <span className="tagline-inner">{movie.tagline}</span>
+              </div>
+              <hr className="hr-movie" />
             </div>
           </div>
         </div>

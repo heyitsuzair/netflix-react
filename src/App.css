@@ -11,6 +11,7 @@ body {
   --color-blue: #0071eb;
   --bg-gray: #303030;
   --light-black: #181818;
+  --gray: #a3a3a3;
 }
 /* Scrollbar */
 ::-webkit-scrollbar {
@@ -366,11 +367,7 @@ body {
   background-size: cover !important;
 }
 .movie .movie-inner .movie-hero .movie-overlay {
-  background: linear-gradient(
-    270deg,
-    rgba(8, 168, 11, 0) 10%,
-    rgba(4, 4, 4, 0.8743872549019608) 60%
-  );
+  background: linear-gradient(270deg, rgba(8, 168, 11, 0) 10%, #181818 80%);
   height: 92.2vh;
   display: flex;
   justify-content: center;
@@ -397,6 +394,43 @@ body {
 .movie .movie-inner .movie-hero .movie-hero-inner .series {
   display: flex;
   margin-bottom: 2.5rem;
+}
+.movie .movie-inner .after-hero {
+  background: var(--light-black);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 92vw;
+  margin: auto;
+}
+.movie .movie-inner .after-hero .all-you-want {
+  background-image: linear-gradient(90deg, #333 5%, #181818 95%);
+  box-shadow: 8px 5px 16px 0 rgb(0 0 0 / 37%);
+  padding: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90vw;
+  margin: auto;
+  margin-bottom: 4rem;
+}
+.movie .movie-inner .after-hero .all-you-want .want-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.movie .movie-inner .after-hero .hr-movie {
+  background: linear-gradient(90deg, #777 0, rgba(51, 51, 51, 0.5) 50%, #777);
+  border: none;
+  height: 0.1rem;
+  margin-bottom: 2rem;
+}
+.movie .movie-inner .after-hero .tagline {
+  margin-bottom: 2rem;
+}
+.movie .movie-inner .after-hero .tagline .tagline-inner {
+  color: var(--gray);
+  text-align: center;
 }
 /* Media Queries */
 
