@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { useParams } from "react-router-dom";
 import logo from "../assets/img/logo-2.png";
 import logo2 from "../assets/img/favicon.ico";
@@ -29,7 +29,7 @@ export default function Movie({ setProgress }) {
       <div className="movie">
         <div className="movie-inner">
           <div className="navbar">
-            <navbar className="navbar-2">
+            <div className="navbar-2">
               <div className="nav-logo">
                 <img src={logo} alt="Netflix" id="logo1" width={100} />
                 <img src={logo2} alt="Netflix" id="logo2" width={30} />
@@ -43,7 +43,7 @@ export default function Movie({ setProgress }) {
                   Sign In
                 </a>
               </div>
-            </navbar>
+            </div>
           </div>
 
           <div
@@ -64,24 +64,30 @@ export default function Movie({ setProgress }) {
                   {movie.adult ? " Adult" : " Youngish"} | {movie.status} |
                   <a href={`${movie.homepage}`}>
                     {movie.production_companies !== undefined
-                      ? movie.production_companies[0].name
-                      : "No"}
+                      ? "\n" + movie.production_companies[0].name
+                      : ""}
                   </a>
                 </div>
-                <div className="overview">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa
-                  ea sint quos ipsum, voluptatem amet eaque labore, provident
-                  temporibus, error fugit eius qui in eos quis consectetur harum
-                  excepturi a mollitia culpa quaerat accusantium alias. Aperiam
-                  magni vero sit ex, ea ipsum dolorum non.
-                </div>
+                <div className="overview">{movie.overview}</div>
                 <div className="creators">
-                  <span className="creators-span">Creators</span> :
-                  <span> noeneoneffn.nwdowdwn</span>
+                  <span className="creators-span">Languages</span> :
+                  <span>
+                    {movie.spoken_languages !== undefined
+                      ? movie.spoken_languages.map((language) => {
+                          return "\n" + language.name + "\n";
+                        })
+                      : "Loading"}
+                  </span>
                 </div>
                 <div className="creators">
                   <span className="creators-span">Countries</span> :
-                  <span> noeneoneffn.nwdowdwn</span>
+                  <span>
+                    {movie.production_countries !== undefined
+                      ? movie.production_countries.map((country) => {
+                          return "\n" + country.name + "\n";
+                        })
+                      : "Loading"}
+                  </span>
                 </div>
               </div>
             </div>

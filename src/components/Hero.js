@@ -6,14 +6,14 @@ export default function Hero() {
     <>
       <div className="Hero bb-gray">
         <div className="overlay">
-          <navbar className="navbar">
+          <div className="navbar">
             <div className="nav-item">
               <img src={logo} alt="Netflix" width={120} />
               <a id="signin" className="authLinks" href="/">
                 Sign In
               </a>
             </div>
-          </navbar>
+          </div>
           <div className="hero-inner">
             <h1>Unlimited movies, TV</h1>
             <h1 id="second-h2">
