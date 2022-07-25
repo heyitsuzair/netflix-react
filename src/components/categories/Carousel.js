@@ -51,25 +51,27 @@ export default function Carousel({ title, cat_id, setProgress }) {
 
   return (
     <>
-      <h1>{title}</h1>
       {loading ? (
         ""
       ) : (
-        <OwlCarousel className="slider-items owl-carousel" {...options}>
-          {movies.map((movie) => {
-            return (
-              <div className="item" key={`${movie.id}`}>
-                <Link to={`/movie/${cat_id}/${movie.id}`} id={`${movie.id}`}>
-                  <img
-                    alt="img"
-                    src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`}
-                  />
-                </Link>
-                <h6>{movie.original_title}</h6>
-              </div>
-            );
-          })}
-        </OwlCarousel>
+        <>
+          <h1>{title}</h1>
+          <OwlCarousel className="slider-items owl-carousel" {...options}>
+            {movies.map((movie) => {
+              return (
+                <div className="item" key={`${movie.id}`}>
+                  <Link to={`/movie/${cat_id}/${movie.id}`} id={`${movie.id}`}>
+                    <img
+                      alt="img"
+                      src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`}
+                    />
+                  </Link>
+                  <h6>{movie.original_title}</h6>
+                </div>
+              );
+            })}
+          </OwlCarousel>
+        </>
       )}
     </>
   );

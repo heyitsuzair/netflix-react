@@ -490,7 +490,19 @@ body {
 .coming-soon-h2 {
   font-weight: 400;
 }
+.after-hero .section-6 {
+  background: var(--light-black);
+  padding-left: 0;
+}
+.after-hero .section-6 .section-inner {
+  justify-content: start;
+}
 /* Media Queries */
+@media (min-width: 1025px) and (max-width: 1150px) {
+  .coming-soon-inner {
+    grid-template-columns: repeat(2, 33rem);
+  }
+}
 @media (max-width: 1024px) {
   .more-like-this {
     grid-template-columns: repeat(5, 19vw);
