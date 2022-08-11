@@ -329,6 +329,10 @@ body {
   display: flex;
   flex-direction: column;
 }
+.owl-item{
+  display: flex;
+  justify-content: center;
+}
 .owl-next {
   color: var(--color-primary) !important;
   font-size: 3rem !important;
