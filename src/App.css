@@ -329,7 +329,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-.owl-item{
+.owl-item {
   display: flex;
   justify-content: center;
 }
@@ -608,7 +608,7 @@ body {
     font-size: 1rem;
   }
   .owl-nav {
-    top: -7.8rem;
+    top: -18.8rem;
   }
   .more-like-this {
     grid-template-columns: repeat(5, 18.5vw);
@@ -631,7 +631,7 @@ body {
     margin-right: 2rem;
   }
   .owl-nav {
-    top: -7.8rem;
+    top: -17.8rem;
   }
 }
 @media (max-width: 739px) {
@@ -691,7 +691,7 @@ body {
     display: block;
   }
   .owl-nav {
-    top: -18.8rem;
+    top: -15.8rem;
   }
   .onlyon-content {
     padding: 15px 25px;
