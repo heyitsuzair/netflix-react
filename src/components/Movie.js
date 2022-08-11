@@ -65,14 +65,14 @@ export default function Movie({ setProgress }) {
       console.error(err);
     }
   };
-  setProgress(100);
-  setProgress(0);
 
   useEffect(() => {
     movieDetail(id);
     getVideos(id);
     getSimilars(catid);
     comingSoon();
+    setProgress(100);
+    setProgress(0);
     //eslint-disable-next-line
   }, [id]);
   document.title = `Netflix | ${movie.original_title}`;
