@@ -64,9 +64,9 @@ export default function Movie({ setProgress }) {
         setProgress(0);
       });
     } catch (err) {
-      console.error(err);
       setProgress(100);
       setProgress(0);
+      console.error(err);
     }
   };
 
