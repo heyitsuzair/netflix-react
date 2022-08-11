@@ -22,10 +22,10 @@ export default function Movie({ setProgress }) {
 
   const movieDetail = async (idIncome) => {
     let url = `https://api.themoviedb.org/3/movie/${idIncome}?api_key=d33fd7ceb022bfce03f26f165fccb251&language=en-US `;
+    setProgress(30);
     try {
       await axios.get(url).then((res) => {
         setMovie(res.data);
-        setProgress(30);
       });
     } catch (err) {
       console.error(err);
@@ -33,10 +33,10 @@ export default function Movie({ setProgress }) {
   };
   const getVideos = async (idIncome) => {
     let url = `https://api.themoviedb.org/3/movie/${idIncome}/videos?api_key=d33fd7ceb022bfce03f26f165fccb251&language=en-US `;
+    setProgress(50);
     try {
       await axios.get(url).then((res) => {
         setVideos(res.data.results);
-        setProgress(50);
       });
     } catch (err) {
       console.err(err);
@@ -44,10 +44,10 @@ export default function Movie({ setProgress }) {
   };
   const getSimilars = async (catIdIncome) => {
     let url = `https://api.themoviedb.org/3/movie/${catIdIncome}/similar?api_key=d33fd7ceb022bfce03f26f165fccb251&language=en-US `;
+    setProgress(70);
     try {
       await axios.get(url).then((res) => {
         setSimilar(res.data.results);
-        setProgress(70);
       });
     } catch (err) {
       console.error(err);
@@ -56,17 +56,17 @@ export default function Movie({ setProgress }) {
 
   const comingSoon = async () => {
     let url = `https://api.themoviedb.org/3/movie/upcoming?api_key=d33fd7ceb022bfce03f26f165fccb251&language=en-US&page=1`;
+    setProgress(80);
     try {
-      setProgress(80);
       await axios.get(url).then((res) => {
         setComing(res.data.results);
       });
     } catch (err) {
       console.error(err);
     }
+    setProgress(100);
+    setProgress(0);
   };
-  setProgress(100);
-  setProgress(0);
 
   useEffect(() => {
     movieDetail(id);
