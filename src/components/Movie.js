@@ -71,10 +71,11 @@ export default function Movie({ setProgress }) {
     getVideos(id);
     getSimilars(catid);
     comingSoon();
-    setProgress(100);
-    setProgress(0);
+
     //eslint-disable-next-line
   }, [id]);
+  setProgress(100);
+  setProgress(0);
   document.title = `Netflix | ${movie.original_title}`;
 
   return (
