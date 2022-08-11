@@ -608,7 +608,7 @@ body {
     font-size: 1rem;
   }
   .owl-nav {
-    top: -20.8rem;
+    top: -7.8rem;
   }
   .more-like-this {
     grid-template-columns: repeat(5, 18.5vw);
@@ -631,7 +631,7 @@ body {
     margin-right: 2rem;
   }
   .owl-nav {
-    top: -17.8rem;
+    top: -7.8rem;
   }
 }
 @media (max-width: 739px) {
