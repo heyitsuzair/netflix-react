@@ -60,14 +60,12 @@ export default function Movie({ setProgress }) {
       setProgress(80);
       await axios.get(url).then((res) => {
         setComing(res.data.results);
-        setProgress(100);
-        setProgress(0);
       });
     } catch (err) {
-      setProgress(100);
-      setProgress(0);
       console.error(err);
     }
+    setProgress(100);
+    setProgress(0);
   };
 
   useEffect(() => {
