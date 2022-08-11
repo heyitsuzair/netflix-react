@@ -16,18 +16,21 @@ export default function OnlyOnSlider({ setProgress }) {
         setProgress(75);
         setCats(res.data.genres);
         setLoading(false);
+
+        setProgress(85);
+        setProgress(100);
       });
     } catch (err) {
       console.error(err);
-    }
 
-    setProgress(85);
+      setProgress(85);
+      setProgress(100);
+    }
   };
   useEffect(() => {
     getCats();
     //eslint-disable-next-line
   }, []);
-  setProgress(100);
   return (
     <>
       {loading ? (
