@@ -61,6 +61,7 @@ export default function Movie({ setProgress }) {
       await axios.get(url).then((res) => {
         setComing(res.data.results);
         setProgress(100);
+        setProgress(0);
       });
     } catch (err) {
       console.error(err);
