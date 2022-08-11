@@ -22,9 +22,6 @@ export default function OnlyOnSlider({ setProgress }) {
       });
     } catch (err) {
       console.error(err);
-
-      setProgress(85);
-      setProgress(100);
     }
   };
   useEffect(() => {

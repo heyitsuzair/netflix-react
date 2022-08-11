@@ -21,6 +21,7 @@ export default function Movie({ setProgress }) {
   let { id, catid } = useParams();
 
   const movieDetail = async (idIncome) => {
+    setProgress(0);
     let url = `https://api.themoviedb.org/3/movie/${idIncome}?api_key=d33fd7ceb022bfce03f26f165fccb251&language=en-US `;
     setProgress(30);
     try {
