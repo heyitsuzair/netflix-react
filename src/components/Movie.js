@@ -57,6 +57,9 @@ export default function Movie({ setProgress }) {
   const comingSoon = async () => {
     let url = `https://api.themoviedb.org/3/movie/upcoming?api_key=d33fd7ceb022bfce03f26f165fccb251&language=en-US&page=1`;
     setProgress(80);
+
+    setProgress(100);
+    setProgress(0);
     try {
       await axios.get(url).then((res) => {
         setComing(res.data.results);
@@ -74,8 +77,7 @@ export default function Movie({ setProgress }) {
 
     //eslint-disable-next-line
   }, [id]);
-  setProgress(100);
-  console.log("100");
+
   document.title = `Netflix | ${movie.original_title}`;
 
   return (
